@@ -12,7 +12,7 @@ Information
 Memory overhead is ``(memsize / 4 * minblocksize)``.
 
 balloc is O(N log N).
-balloc2 is O(log N) and performs balancing.
+balloc2 is O(log N).
 bfree is O(log N).
 
 TODO
