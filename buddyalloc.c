@@ -57,7 +57,7 @@ uint32_t btrav(uint32_t size, uint32_t n, uint32_t s)
 {
 	uint32_t a;
 	uint32_t l = n << 1, r = (n << 1) + 1;
-	if (s <= BLK_SIZE) return 0xffffffff;
+	if (s < BLK_SIZE) return 0xffffffff;
 
 	if (!BIT_TEST(n) && size == s)
 		return n;
